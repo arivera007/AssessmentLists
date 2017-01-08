@@ -79,8 +79,7 @@ def foods_in_common(foods1, foods2):
 
     """
 
-                                                    # The result has different order than solution but is not controllable with this solution?
-    return list(set(foods2) & set(foods1))          # Turned list into set and then applied "AND" to get the common items in both lists. Turned  results back into list.
+    return sorted(list(set(foods2) & set(foods1)))          # Turned list into set and then applied "AND" to get the common items in both lists. Turned  results back into list.
 
 
 def every_other_item(items):
